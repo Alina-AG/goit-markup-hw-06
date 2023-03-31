@@ -393,7 +393,7 @@ img {
 }
 .footer-section>.container {
     align-items: flex-start;
-    justify-content: start;
+    justify-content: space-between;
 }
 .footer-section .logo-link{
     display: block;
@@ -401,13 +401,13 @@ img {
 }
 .footer-section .descr {
     display: block;
-    width: 264px;
     color: var(--light);
 }
-.soc-block {
-    margin-left: 120px;
-    margin-right: 80px;
+.footer-descr {
+    width: 264px;
+
 }
+
 footer .soc-list {
     display: flex;
     justify-content: start;
@@ -421,6 +421,7 @@ footer .soc-list-link:hover,
 footer .soc-list-link:focus {
     background-color: var(--success);
 }
+
 .subscribe-form {
     display: flex;
     justify-content: center;
@@ -558,16 +559,21 @@ footer .soc-list-link:focus {
 
     color: var(--subtle-text);
 }
+.form-wrap {
+    position: relative;
+}
 .modal-icon {
     position: absolute;
-    bottom: 11px;
+    top: 50%;
     left: 16px;
+    transform: translateY(-50%);
 }
 
 .modal-icon {
     transition: fill var(--transition-descr);
 }
 .call-back-form-input {
+    display: block;
     width: 100%;
     height: 40px;
     margin-top: 4px;
@@ -627,6 +633,7 @@ footer .soc-list-link:focus {
 }
 .form-check {
     display: inline-block;
+    appearance: none;
 }
 .form-check:checked + .call-back-form-check>.check-icon {
     background-color: var(--pressed-state);
@@ -733,4 +740,4 @@ footer .soc-list-link:focus {
     margin-bottom: 8px;
 }
 
-/*===========================Portfolio===========================*/
+/*===========================/Portfolio===========================*/
